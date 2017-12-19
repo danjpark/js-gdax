@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/danjpark/js-gdax#readme",
   "dependencies": {
-    "gdax": "^0.4.2"
+    "gdax": "github:coinbase/gdax-node"
   }
 }
