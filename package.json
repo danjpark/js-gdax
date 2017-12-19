@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/danjpark/js-gdax/issues"
   },
-  "homepage": "https://github.com/danjpark/js-gdax#readme"
+  "homepage": "https://github.com/danjpark/js-gdax#readme",
+  "dependencies": {
+    "gdax": "^0.4.2"
+  }
 }
