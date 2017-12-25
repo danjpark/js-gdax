@@ -48,7 +48,7 @@ const arb_algo_theo = async () => {
 };
 
 const test_live = async () => {
-    let epsilon = 1.0;
+    let epsilon = 50.10;
 
     try{
         let usdbtc_book = await BTCUSD_publicClient.getProductOrderBook({'level':1});
@@ -59,6 +59,7 @@ const test_live = async () => {
         if(btcltc_book.message) return console.log(btcltc_book.message);
 
         let availableUSD = (await authedClient.getAccount(CONFIG.USDAccountID)).available;
+        availableUSD = 1000
 
         // USD -> LTC -> BTC -> USD
         let pnl1 = roundDown(availableUSD
